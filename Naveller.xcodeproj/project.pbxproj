@@ -11,6 +11,7 @@
 		F5B1CF682C5EFF0400557377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CF672C5EFF0400557377 /* ContentView.swift */; };
 		F5B1CF6A2C5EFF0500557377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B1CF692C5EFF0500557377 /* Assets.xcassets */; };
 		F5B1CF6E2C5EFF0500557377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B1CF6D2C5EFF0500557377 /* Preview Assets.xcassets */; };
+		F5B1CF752C5F04CB00557377 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CF742C5F04CB00557377 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F5B1CF692C5EFF0500557377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B1CF6B2C5EFF0500557377 /* Naveller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Naveller.entitlements; sourceTree = "<group>"; };
 		F5B1CF6D2C5EFF0500557377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5B1CF742C5F04CB00557377 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B1CF652C5EFF0400557377 /* NavellerApp.swift */,
+				F5B1CF742C5F04CB00557377 /* HomeView.swift */,
 				F5B1CF672C5EFF0400557377 /* ContentView.swift */,
 				F5B1CF692C5EFF0500557377 /* Assets.xcassets */,
 				F5B1CF6B2C5EFF0500557377 /* Naveller.entitlements */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B1CF752C5F04CB00557377 /* HomeView.swift in Sources */,
 				F5B1CF682C5EFF0400557377 /* ContentView.swift in Sources */,
 				F5B1CF662C5EFF0400557377 /* NavellerApp.swift in Sources */,
 			);
