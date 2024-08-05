@@ -7,4 +7,20 @@
 
 import Foundation
 
-public protocol
+public protocol FetchAllPinsUseCase {
+    
+    func execute() async -> [Pin]
+}
+
+public class FetchAllPinsUseCaseImplementation: FetchAllPinsUseCase {
+    
+    let pinDataRepository: PinDataRepository
+    
+    public init(pinDataRepository: PinDataRepository) {
+        self.pinDataRepository = pinDataRepository
+    }
+    
+    public func execute() async -> [Pin] {
+        await pinDataRepository.fetchAllPins()
+    }
+}
