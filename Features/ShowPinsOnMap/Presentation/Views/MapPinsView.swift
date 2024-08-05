@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct MapPinsView: View {
+    
+    @StateObject var vm = PinsViewModel(pinsRepository: MemoryPinStorageDataSource())
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(vm.pins) {pin in
+           
+            Text(pin.title)
+                .onAppear {
+                    vm.fetchPins()
+            }
+        }
+     
     }
 }
 
 #Preview {
-    MapPinsView()
+    MapPinsView(vm: 
+            .init(pinsRepository: MemoryPinStorageDataSource()))
 }
