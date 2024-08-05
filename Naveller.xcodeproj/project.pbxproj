@@ -12,6 +12,12 @@
 		F5B1CF6A2C5EFF0500557377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B1CF692C5EFF0500557377 /* Assets.xcassets */; };
 		F5B1CF6E2C5EFF0500557377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B1CF6D2C5EFF0500557377 /* Preview Assets.xcassets */; };
 		F5B1CF752C5F04CB00557377 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CF742C5F04CB00557377 /* HomeView.swift */; };
+		F5B1CFA02C5F151F00557377 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CF9F2C5F151F00557377 /* Pin.swift */; };
+		F5B1CFA22C5F15E800557377 /* FetchAllPinsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CFA12C5F15E800557377 /* FetchAllPinsUseCase.swift */; };
+		F5B1CFA42C5F169800557377 /* PinDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CFA32C5F169800557377 /* PinDataRepository.swift */; };
+		F5B1CFA72C5F174800557377 /* MemoryPinStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CFA62C5F174800557377 /* MemoryPinStorage.swift */; };
+		F5B1CFAD2C5F19CC00557377 /* MapPinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CFAC2C5F19CC00557377 /* MapPinsView.swift */; };
+		F5B1CFAF2C5F19EC00557377 /* PinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1CFAE2C5F19EC00557377 /* PinsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		F5B1CF6B2C5EFF0500557377 /* Naveller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Naveller.entitlements; sourceTree = "<group>"; };
 		F5B1CF6D2C5EFF0500557377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5B1CF742C5F04CB00557377 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F5B1CF9F2C5F151F00557377 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		F5B1CFA12C5F15E800557377 /* FetchAllPinsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllPinsUseCase.swift; sourceTree = "<group>"; };
+		F5B1CFA32C5F169800557377 /* PinDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDataRepository.swift; sourceTree = "<group>"; };
+		F5B1CFA62C5F174800557377 /* MemoryPinStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryPinStorage.swift; sourceTree = "<group>"; };
+		F5B1CFAC2C5F19CC00557377 /* MapPinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPinsView.swift; sourceTree = "<group>"; };
+		F5B1CFAE2C5F19EC00557377 /* PinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				F5B1CF642C5EFF0400557377 /* Naveller */,
+				F5B1CF912C5F100E00557377 /* Features */,
+				F5B1CF962C5F137C00557377 /* Domain */,
+				F5B1CF9C2C5F148200557377 /* Frameworks */,
 				F5B1CF632C5EFF0400557377 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +85,153 @@
 				F5B1CF6D2C5EFF0500557377 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5B1CF912C5F100E00557377 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CF932C5F114F00557377 /* ShowPinsOnMap */,
+				F5B1CF952C5F130700557377 /* SearchPlaceByName */,
+				F5B1CF942C5F129A00557377 /* ShowDetailsForSelectedPin */,
+				F5B1CF922C5F10F900557377 /* SearchCompaniesHouse */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F5B1CF922C5F10F900557377 /* SearchCompaniesHouse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchCompaniesHouse;
+			sourceTree = "<group>";
+		};
+		F5B1CF932C5F114F00557377 /* ShowPinsOnMap */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CF992C5F141100557377 /* Data */,
+				F5B1CF9A2C5F143300557377 /* Presentation */,
+			);
+			path = ShowPinsOnMap;
+			sourceTree = "<group>";
+		};
+		F5B1CF942C5F129A00557377 /* ShowDetailsForSelectedPin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowDetailsForSelectedPin;
+			sourceTree = "<group>";
+		};
+		F5B1CF952C5F130700557377 /* SearchPlaceByName */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchPlaceByName;
+			sourceTree = "<group>";
+		};
+		F5B1CF962C5F137C00557377 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CF9B2C5F146300557377 /* ShowPinsOnMap */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F5B1CF972C5F138900557377 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CF9F2C5F151F00557377 /* Pin.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F5B1CF982C5F139000557377 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFA12C5F15E800557377 /* FetchAllPinsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F5B1CF992C5F141100557377 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFA32C5F169800557377 /* PinDataRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F5B1CF9A2C5F143300557377 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFAB2C5F196700557377 /* Model */,
+				F5B1CFA92C5F195300557377 /* Views */,
+				F5B1CFA82C5F194C00557377 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F5B1CF9B2C5F146300557377 /* ShowPinsOnMap */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CF972C5F138900557377 /* Entities */,
+				F5B1CF982C5F139000557377 /* UseCases */,
+			);
+			path = ShowPinsOnMap;
+			sourceTree = "<group>";
+		};
+		F5B1CF9C2C5F148200557377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFA52C5F170E00557377 /* PinStorage */,
+				F5B1CF9E2C5F14C100557377 /* CompaniesHouseAPI */,
+				F5B1CF9D2C5F14B500557377 /* GoogleMapsAPI */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5B1CF9D2C5F14B500557377 /* GoogleMapsAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleMapsAPI;
+			sourceTree = "<group>";
+		};
+		F5B1CF9E2C5F14C100557377 /* CompaniesHouseAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CompaniesHouseAPI;
+			sourceTree = "<group>";
+		};
+		F5B1CFA52C5F170E00557377 /* PinStorage */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFA62C5F174800557377 /* MemoryPinStorage.swift */,
+			);
+			path = PinStorage;
+			sourceTree = "<group>";
+		};
+		F5B1CFA82C5F194C00557377 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFAE2C5F19EC00557377 /* PinsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5B1CFA92C5F195300557377 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1CFAC2C5F19CC00557377 /* MapPinsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5B1CFAB2C5F196700557377 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B1CF752C5F04CB00557377 /* HomeView.swift in Sources */,
+				F5B1CFA42C5F169800557377 /* PinDataRepository.swift in Sources */,
+				F5B1CFA72C5F174800557377 /* MemoryPinStorage.swift in Sources */,
+				F5B1CFAF2C5F19EC00557377 /* PinsViewModel.swift in Sources */,
+				F5B1CFA22C5F15E800557377 /* FetchAllPinsUseCase.swift in Sources */,
 				F5B1CF682C5EFF0400557377 /* ContentView.swift in Sources */,
 				F5B1CF662C5EFF0400557377 /* NavellerApp.swift in Sources */,
+				F5B1CFA02C5F151F00557377 /* Pin.swift in Sources */,
+				F5B1CFAD2C5F19CC00557377 /* MapPinsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
