@@ -47,6 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5A71F3F2C9252A600C557D5 /* ComputeShortestDistance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ComputeShortestDistance;
+			sourceTree = "<group>";
+		};
+		F5A71F402C9253CB00C557D5 /* MakeCalendarEventFromNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MakeCalendarEventFromNote;
+			sourceTree = "<group>";
+		};
 		F5B1CF592C5EFF0400557377 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +106,10 @@
 			children = (
 				F5B1CF932C5F114F00557377 /* ShowPinsOnMap */,
 				F5B1CF952C5F130700557377 /* SearchPlaceByName */,
-				F5B1CF942C5F129A00557377 /* ShowDetailsForSelectedPin */,
 				F5B1CF922C5F10F900557377 /* SearchCompaniesHouse */,
+				F5A71F3F2C9252A600C557D5 /* ComputeShortestDistance */,
+				F5B1CF942C5F129A00557377 /* ShowDetailsForSelectedPin */,
+				F5A71F402C9253CB00C557D5 /* MakeCalendarEventFromNote */,
 			);
 			path = Features;
 			sourceTree = "<group>";
